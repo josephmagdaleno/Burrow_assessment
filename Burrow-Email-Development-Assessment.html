@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title>Burrow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        body,
+        table,
+        td,
+        a:link {
+   color:inherit;
+}
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        .button a {
+            transition: all .25s;
+            transition-property: all;
+            transition-duration: 0.25s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+        .button a:hover{
+            transform: translateY(-0.25em);
+            transition: all .25s;
+            transition-property: all;
+            transition-duration: 0.25s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
+        a.cta-underline:hover{
+            border: none !important;
+        }
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        table {
+            border-collapse: collapse !important;
+        }
+        
+        body {
+            height: 100% !important;
+            Margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+        
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        
+        @media screen {
+            @font-face {
+                font-family: 'GT America Regular';
+                font-style: normal;
+                src: url(https://d1qnmprc5tnkc9.cloudfront.net/fonts/33d4f5fa6c9ae8d08f56aae1c336e341.woff) format("woff");
+            }
+            @font-face {
+                font-family: 'GT America Light';
+                font-style: normal;
+                src: url(https://d1qnmprc5tnkc9.cloudfront.net/fonts/756690a76872f40cf2e06df5b22da782.woff) format("woff");
+            }
+            @font-face {
+                font-family: 'GT America Extended Medium Dropbox';
+                font-style: normal;
+                src: url(https://burrow-assets.s3.amazonaws.com/email.burrow/Templates/fonts/GT-America-Extended-Medium.woff) format("woff");
+            }
+            @font-face {
+                font-family: 'Neuzeit S LT W01 Book';
+                font-style: normal;
+                src: url(https://d1qnmprc5tnkc9.cloudfront.net/fonts/c506d6b24ddd6d6a415b040bedcc2c5d.woff) format("woff");
+            }
+            @font-face {
+                font-family: 'NeuzeitSLTW01-BookHeavy';
+                font-style: normal;
+                src: url(https://d1qnmprc5tnkc9.cloudfront.net/fonts/0f2c8bb68b4b28d20d61d5a23df03921.woff) format("woff");
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+           .nav {
+                font-size: 11px !important;
+                padding: 0px 8px 0px 8px !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                white-space: nowrap !important;
+            }
+            .nav3 a {
+                font-size: 11px !important;
+                padding: 0px 0px 0px 5px !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                white-space: nowrap !important;
+            }
+            .nav4 a {
+                font-size: 11px !important;
+                padding: 0px 5px 0px 0px !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                white-space: nowrap !important;
+            }
+            .spacer {
+                padding: 0px 0px 10px 0px !important;
+            }
+            .hed1 {
+                font-size: 20px !important;
+                line-height: 23px !important;
+                padding: 10px 0px 10px 0px !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .hed2 {
+                font-size: 20px !important;
+                line-height: 23px !important;
+                padding: 17px 0px 90px 0px !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .hed3 {
+                font-size: 20px !important;
+                line-height: 23px !important;
+                padding: 35px 0px 40px 0px !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .para {
+                font-size: 15px !important;
+                line-height: 21px !important;
+                padding: 15px 0px 20px 0px !important;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .center-align {
+                text-align: center !important;
+            }
+            .credit {
+                font-size: 11px !important;
+                padding: 3px 0px 0px 0px !important;
+            }
+            .pad0 {
+                padding: 0px !important;
+            }
+            .top {
+                font-size: 13px !important;
+                line-height: 18px !important;
+                padding: 2px 10px 15px 10px !important;
+            }
+            .bot {
+                font-size: 13px !important;
+                line-height: 18px !important;
+                padding: 0px 10px 35px 10px !important;
+            }
+            .ctapad {
+                padding: 0px 30px 20px 30px !important;
+            }
+            .button-text {
+                font-size: 13px !important;
+                line-height: 45px !important;
+                width: 220px !important;
+                font-family: 'GT America Regular', Arial, 'sans-serif' !important;
+            }
+            .mobile {
+                display: none !important;
+            }
+            .icon {
+                width: 20px !important;
+            }
+            .footwrap {
+                padding: 5px 0px 15px 0px !important;
+            }
+            .footerlinks {
+                padding: 18px 0px 5px 0px !important;
+                display: block !important;
+                font-size: 13px !important;
+                border: none !important;
+            }
+            .width-100 {
+                width: 100% !important;
+            }
+            .column {
+                display:block !important;
+                width:100% !important;
+            }
+            .image_mobile {
+                display: block !important;
+                max-height: none !important;
+                max-width:none !important;
+                line-height: 1.5 !important;
+                width:100% !important; 
+                height:auto !important;
+            }
+            .hide {
+                display: none !important;
+                width: 0px !important;
+                height: 0px !important;
+                overflow: hidden !important;
+                line-height: 0px !important;
+                font-size: 0px !important;
+             }
+            .modpad {
+                padding: 10px 0px 10px 0px !important;
+            }
+        }
+    </style>
+    <!--[if gte mso 9]>
+      <xml>
+         <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+         </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+</head>
+
+<body align="center" style="background-color: #FFFFFF; Margin: 0;">
+<div style="display: none; max-height: 0px; overflow: hidden;">&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+</div>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #FFFFFF">
+        <tr>
+            <td align="center">
+                <!--[if (gte mso 9)|(IE)]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width: 600px">
+                <tr>
+                <td align="center" valign="top" width="600" style="width: 600px">
+                <![endif]-->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td align="center" style="padding: 10px 0px 0px 0px;">
+                            <a href="https://burrow.com?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=logo"><img alt="Burrow" width="600" style="display: block; width: 100%; max-width: 100%; font-size: 28px; font-family: Arial, 'sans-serif'; color: #484543;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20191014+Fall+Sale+Leather/Burrow_NAV-Logo_transparent.png" /> </a>
+                        </td>
+                    </tr>
+                </table>
+             <div align="center" style="width: 100%; max-width: 600px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td align="center" class="spacer" style="padding: 0px 0px 20px 0px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="90%" style="max-width: 560px;" align="center">
+                                <tr>
+                                    <td align="center" style="padding: 5px 0px 5px 0px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 510px;" align="center">
+                                            <tr>
+                                                <td class="nav nav3" align="center" style="vertical-align: top; width: 19%; text-align: center; font-family: 'GT America Regular', Arial, 'sans-serif'; font-size: 13px; letter-spacing: -0.1px;"><a style="text-decoration: none; color: #484543;" href="https://burrow.com/all-seating?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=seating">Seating</a>
+                                                </td>
+                                                <td class="nav" align="center" style="vertical-align: top; width: 30%; text-align: center; font-family: 'GT America Regular', Arial, 'sans-serif'; font-size: 13px; letter-spacing: -0.1px;"><a style="text-decoration: none; color: #484543;" href="https://burrow.com/shelves-and-storage?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=shelves-storage">Shelves&nbsp;&amp;&nbsp;Storage</a>
+                                                </td>
+                                                <td class="nav" align="center" style="vertical-align: top; width: 17%; text-align: center; font-family: 'GT America Regular', Arial, 'sans-serif'; font-size: 13px; letter-spacing: -0.1px;"><a style="text-decoration: none; color: #484543;" href="https://burrow.com/tables-and-benches?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=tables-benches">Tables</a>
+                                                </td>
+                                                <td class="nav" align="center" style="vertical-align: top; width: 15%; text-align: center; font-family: 'GT America Regular', Arial, 'sans-serif'; font-size: 13px; letter-spacing: -0.1px;"><a style="text-decoration: none; color: #484543;" href="https://burrow.com/rugs?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=rugs">Rugs</a>
+                                                </td>
+                                                <td class="nav nav4" align="center" style="vertical-align:top; width: 19%; text-align:center; font-family: 'GT America Regular', Arial, 'sans-serif'; font-size: 13px; letter-spacing: -0.1px;"><a style="text-decoration: none; color: #484543;" href="https://burrow.com/lighting?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=lighting">Lighting</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+             </div>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #727380;">
+                    
+                    <tr>
+                        <td  style="padding: 10px 0px 10px 0px;"align="center" style="width: 100%"><span class="hed3" align="center" style="text-align: center; font-family: 'GT America Extended Medium Dropbox', Arial, 'sans-serif'; font-size: 30px; line-height: 35px; letter-spacing: -0.3px"><a href="https://burrowhouseappointments.as.me/schedule.php" style="text-decoration: none; color: white;">All of this could be yours</span>
+                            <a href="https://burrow.com?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=hero-img"><img alt="@apron.saint" width="600" style="padding: 10px 0px 0px 0px; display: block; width: 100%; max-width: 100%; font-size: 20px; font-family: Arial, 'sans-serif'; color: #FFFFFF; background-color: #727380; ;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_01b.png" /></a>
+                        </td>
+                    </tr>
+                </table>
+                <table bgcolor="#727380" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #727380;">
+                    <tr>
+                        <td align="center" style="width: 100%">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 90%">
+                                <tr>
+                                    <td class="para" align="center" style="padding: 65px 0px 35px 0px; text-align: left; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 26px; color:#FFFFFF;"> <a class="cta-underline" href="https://www.instagram.com/apron.saint/" style="border-bottom: 1px solid #FFFFFF; text-decoration: none; color: #FFFFFF;"><!--[if (gte mso 9)|(IE)]><span style="color: #FFFFFF; text-decoration: underline;"><![endif]-->Sarai Reed<!--[if (gte mso 9)|(IE)]></span><![endif]--></a> is a home and interiors consultant and member of the Burrow family. We recently outfitted her new livingroom with a ton of our latest designs — and she made them sing Best of all, you can get the same sofa, table and rug she picked up to <span style="background-color:#DFD3CB; color:black; font-family: NeuzeitSLTW01-BookHeavy;">$500 off during our Black Friday Sale.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td class="ctapad" align="center" style="padding: 0px 0px 40px 0px;">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                             <tr>
+                                 <td class="button" align="center">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                       <tr>
+                                          <td align="center">
+                                              <div>
+                                               <!--[if mso]>
+                                               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://burrow.com?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=hero-cta" style="height:65px;v-text-anchor:middle;width:300px;" arcsize="7%" stroke="f" fillcolor="#DFD3CB">
+                                               <w:anchorlock/>
+                                               <center>
+                                               <![endif]-->
+                                                <a class="button-text" href="https://burrow.com/?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=cta"
+                                                style="background-color: #DFD3CB; border-radius: 4px; color: #484543; display: inline-block; font-family: 'GT America Extended Medium Dropbox', Arial, 'sans-serif'; font-size: 17px; letter-spacing: 1.54px; line-height: 65px; text-align: center; text-decoration: none; width: 300px; -webkit-text-size-adjust: none; text-transform: uppercase;">Shop the sale</a>
+                                                <!--[if mso]>
+                                                </center>
+                                                </v:roundrect>
+                                                <![endif]-->
+                                              </div>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                             </tr>
+                          </table>
+                      </td>
+                   </tr>
+                </table>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #FFFFFF; ">
+                    <tr>
+                        <td align="center" style="width: 100%;">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                <tr>
+                                    <td class="hed1" align="center" style="padding: 15px 0px 15px 0px; text-align: center; font-family: 'GT America Extended Medium Dropbox', Arial, 'sans-serif'; font-size: 27px; line-height: 35px; color:#727380; letter-spacing: -0.3px"><a href="https://burrow.com?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=quote-hed" style="text-decoration: none; color: #727380">In her own words</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a href="https://burrow.com/nomad-leather/sofa-sectional?sku=NLSC-TN-3-LO-DW&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=seating-img"><img alt="Slope Nomad Leather Sectional in Camel" width="600" style="display: block; width: 100%; max-width: 100%; font-size: 20px; font-family: Arial, 'sans-serif'; color: #484543;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_02.png" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="width: 100%">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 90%">
+                                <tr>
+                                    <td class="credit" align="center" style="padding: 5px 0px 10px 0px; text-align: left; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 13px;"><a href="https://www.instagram.com/apron.saint/" style="text-decoration: none; color: #727380">All images courtesy of @apron.saint</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="width: 100%">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 90%">
+                                <tr>
+                                    <td class="para" align="center" style="padding: 5px 0px 25px 0px; text-align: center; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 26px; color:#484543;">“I love Burrow as a brand because everything is so easy to assemble. I put together my sofa and coffee table in under twenty&nbsp;minutes.”
+                                        <br><br>
+                                        <a class="cta-underline" href="https://burrow.com/nomad-leather/sofa-sectional?sku=NLSC-TN-3-LO-DW&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=seating-cta" style="border-bottom: 1px solid #AC7371; text-decoration: none; color: #AC7371; font-family: 'NeuzeitSLTW01-BookHeavy', Arial, 'sans-serif';"><!--[if (gte mso 9)|(IE)]><span style="color: #AC7371; text-decoration: underline;"><![endif]-->Nomad Leather Sofa with Chaise&nbsp;&#8594; Save&nbsp;$200<!--[if (gte mso 9)|(IE)]></span><![endif]--></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td class="modpad" align="center" style="background-color: #FFFFFF; width: 100%; padding: 0px 0px 40px 0px">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="540" style="width: 540px">
+                            <tr>
+                            <td align="center" valign="top" width="540" style="width: 540px">
+                            <![endif]-->
+                            <div>
+                                <table dir="rtl" valign="middle" border="0" cellpadding="0" cellspacing="0" width="90%" style="max-width: 540px; width: 90%">
+                                    <tr>
+                                        <td dir="ltr" class="column" align="center" valign="middle">
+                                            <table align="center" class="width-100" valign="middle" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                                <tr>
+                                                    <td class="pad0">
+                                                        <a href="https://burrow.com/tables-and-benches/carta-coffee-table?sku=FLRTB-CT-BT-WN-HP-BM&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=coffee-table-img">
+                                                         <img align="center" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/BF-Email2_Gif_ApronSaint.gif" alt="Carta Coffee Table in Walnut" width="271" style="display:block; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; width: 271px; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;" class="hide"><div style="display:none; mso-hide: all;" class="image_mobile"><img border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/BF-Email2_Gif_ApronSaint-Mobile.gif" alt="Carta Coffee Table in Walnut" style="display:none; mso-hide: all; ms-interpolation-mode: bicubic; width: 100%; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;" class="image_mobile"></div>
+                                                       </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td dir="ltr" class="column" align="center" valign="top">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td align="center" style="width: 100%;">
+                                                        <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="left" border="0" cellspacing="0" cellpadding="0" width="269" style="width: 269px">
+                                                        <tr>
+                                                        <td align="left" valign="top" width="269" style="width: 269px">
+                                                        <![endif]-->
+                                                        <table class="width-100" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 90%">
+                                                            <tr>
+                                                                <td class="para center-align" align="left" style="text-align: left; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 26px; color:#484542;; width: 269px;">“The Carta [coffee table] is perfect because it holds so much junk, but has clean lines and a small footprint. Plus, the three built in trays are&nbsp;clutch.”
+                                                                    <br><br>
+                                                                    <a class="cta-underline" href="https://burrow.com/tables-and-benches/carta-coffee-table?sku=FLRTB-CT-BT-WN-HP-BM&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=coffee-table-cta" style="border-bottom: 1px solid #AC7371; text-decoration: none; color: #AC7371; font-family: 'NeuzeitSLTW01-BookHeavy', Arial, 'sans-serif';"><!--[if (gte mso 9)|(IE)]><span style="color: #AC7371; text-decoration: underline;"><![endif]-->Carta Coffee Table&nbsp;&#8594; Save&nbsp;$200<!--[if (gte mso 9)|(IE)]></span><![endif]--></a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        
+                                                        <!--[if (gte mso 9)|(IE)]>
+                                                        </td>
+                                                        </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #FFFFFF;">
+                    <tr>
+                        <td align="center" style="width: 100%;">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="540" style="width: 540px">
+                            <tr>
+                            <td align="center" valign="top" width="540" style="width: 540px">
+                            <![endif]-->
+                            <div>
+                                <table dir="rtl" valign="middle" border="0" cellpadding="0" cellspacing="0" width="90%" style="max-width: 540px; width: 90%">
+                                    <tr>
+                                        <td dir="ltr" class="column" align="center" valign="middle">
+                                            <table class="width-100" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 90%">
+                                                <tr>
+                                                    <td class="para center-align" align="left" style="text-align: left; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 26px; color:#484542;; width: 269px;">“If you're looking for a rug you want to stretch out and take a nap on, Ridge is your rug. I've never stepped on something so plush.”
+                                                        <br><br>
+                                                        <a class="cta-underline" href="https://burrow.com/rugs/ridge?sku=ALRRG-MD-1008IV0&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=rug-cta" style="border-bottom: 1px solid #AC7371; text-decoration: none; color: #AC7371; font-family: 'NeuzeitSLTW01-BookHeavy', Arial, 'sans-serif';"><!--[if (gte mso 9)|(IE)]><span style="color: #AC7371; text-decoration: underline;"><![endif]-->Ridge Rug&nbsp;&#8594; Save&nbsp;$80<!--[if (gte mso 9)|(IE)]></span><![endif]--></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                        </td>
+                                        <td dir="ltr" class="column" align="center" valign="top">
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td align="center" style="width: 100%;">
+                                                        <!--[if (gte mso 9)|(IE)]>
+                                                        <table align="left" border="0" cellspacing="0" cellpadding="0" width="269" style="width: 269px">
+                                                        <tr>
+                                                        <td align="left" valign="top" width="269" style="width: 269px">
+                                                        <![endif]-->
+                                                        <table align="center" class="width-100" valign="middle" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                                            <tr>
+                                                                <td class="pad0">
+                                                                    <a href="https://burrow.com/rugs/ridge?sku=ALRRG-MD-1008IV0&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=rug-img">
+                                                                     <img align="center" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_03.png" alt="Girl with camera on rug" width="271" style="padding-right:15px;display:block; outline:none; text-decoration:none; -ms-interpolation-mode: bicubic; width: 271px; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;" class="hide"><div style="display:none; mso-hide: all;" class="image_mobile"><img border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_03m2.png" alt="Carta Coffee Table in Walnut" style="display:none; mso-hide: all; ms-interpolation-mode: bicubic; width: 100%; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;" class="image_mobile"></div>
+                                                                   </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        
+                                                        <!--[if (gte mso 9)|(IE)]>
+                                                        </td>
+                                                        </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+                    <tr>
+                        <td align="center" style="width: 100%">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width: 600px">
+                            <tr>
+                            <td align="center" valign="top" width="600" style="width:600px">
+                            <![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+                                <tr>
+                                    <td class="hed2" align="center" style="padding: 35px 0px 10px 0px; text-align: center; font-family: 'GT America Extended Medium Dropbox', Arial, 'sans-serif'; font-size: 27px; line-height: 35px; color:#727380; letter-spacing: -0.3px"><a href="https://burrow.com?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-hed" style="text-decoration: none; color: #727380">Shop Sarai's living room</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" style="padding-top: 7px; width: 100%">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="540" style="width: 540px;">
+                        <tr>
+                        <td align="center" valign="top" width="540" style="width: 540px;">
+                        <![endif]-->
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td width="50%" align="left" valign="top">
+                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 270px;">
+                                        <tr>
+                                             <td>
+                                                 <a href="https://burrow.com/nomad-leather/sofa-sectional?sku=NLSC-TN-3-LO-DW&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-NLSC-TN-3-LO-DW"><img alt="Slope Nomad Leather Sectional" width="270" style="display: inline-block; width: 270px; max-width: 100%; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_04.png" /></a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td align="center" style="width: 100%">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 270px;">
+                                                    <tr>
+                                                         <td class="top" align="center" style="padding: 0px 10px 25px 10px; text-align: center; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 25px; color: #484543;"><a class="cta-underline" href="https://burrow.com/nomad-leather/sofa-sectional?sku=NLSC-TN-3-LO-DW&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-NLSC-TN-3-LO-DW" style="border-bottom: 1px solid #484543; text-decoration: none; color: #484543;"><!--[if (gte mso 9)|(IE)]><span style="color: #484543; text-decoration: underline;"><![endif]-->Save $200<!--[if (gte mso 9)|(IE)]></span><![endif]--></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                 <td width="50%" align="center" valign="top">
+                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 270px;">
+                                        <tr>
+                                             <td>
+                                                 <a href="https://burrow.com/tables-and-benches/carta-coffee-table?sku=FLRTB-CT-BT-WN-HP-BM&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-FLRTB-CT-BT-WN-HP-BM"><img alt="Carta Coffee Table" width="270" style="display: inline-block; width: 270px; max-width: 100%; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_05.png" /></a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td align="center" style="width: 100%">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 270px;">
+                                                    <tr>
+                                                         <td class="top" align="center" style="padding: 0px 10px 25px 10px; text-align: center; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 25px; color:#484543;"><a class="cta-underline" href="https://burrow.com/tables-and-benches/carta-coffee-table?sku=FLRTB-CT-BT-WN-HP-BM&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-FLRTB-CT-BT-WN-HP-BM" style="border-bottom: 1px solid #484543; text-decoration: none; color: #484543;"><!--[if (gte mso 9)|(IE)]><span style="color: #484543; text-decoration: underline;"><![endif]-->Save $50<!--[if (gte mso 9)|(IE)]></span><![endif]--></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                              </tr>
+                          </table>
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td width="50%" align="left" valign="top">
+                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 270px;">
+                                      <tr>
+                                           <td>
+                                               <a href="https://burrow.com/accessories/desert-neutrals-set?sku=PT-DSN-0&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-desert-neutrals"><img alt="Slope Nomad Leather Sectional" width="270" style="display: inline-block; width: 270px; max-width: 100%; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_06.png" /></a>
+                                          </td>
+                                      </tr>
+                                       <tr>
+                                          <td align="center" style="width: 100%">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 270px;">
+                                                  <tr>
+                                                       <td class="top" align="center" style="padding: 0px 10px 25px 10px; text-align: center; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 25px; color: #484543;"><a class="cta-underline" href="https://burrow.com/accessories/desert-neutrals-set?sku=PT-DSN-0&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-desert-neutrals" style="border-bottom: 1px solid #484543; text-decoration: none; color: #484543;"><!--[if (gte mso 9)|(IE)]><span style="color: #484543; text-decoration: underline;"><![endif]-->Save $200<!--[if (gte mso 9)|(IE)]></span><![endif]--></a></td>
+                                                  </tr>
+                                              </table>
+                                          </td>
+                                      </tr>
+                                  </table>
+                              </td>
+                               <td width="50%" align="center" valign="top">
+                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 270px;">
+                                      <tr>
+                                           <td>
+                                               <a href="https://burrow.com/rugs/ridge?sku=ALRRG-MD-1008IV0&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-ridge"><img alt="Carta Coffee Table" width="270" style="display: inline-block; width: 270px; max-width: 100%; font-size: 14px; font-family: Arial, 'sans-serif'; color: #484543;;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/24+UGC/2020bf-02_07.png" /></a>
+                                          </td>
+                                      </tr>
+                                       <tr>
+                                          <td align="center" style="width: 100%">
+                                              <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 270px;">
+                                                  <tr>
+                                                       <td class="top" align="center" style="padding: 0px 10px 25px 10px; text-align: center; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 18px; line-height: 25px; color:#484543;"><a class="cta-underline" href="https://burrow.com/rugs/ridge?sku=ALRRG-MD-1008IV0&utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=grid-ridge" style="border-bottom: 1px solid #484543; text-decoration: none; color: #484543;"><!--[if (gte mso 9)|(IE)]><span style="color: #484543; text-decoration: underline;"><![endif]-->Save $80<!--[if (gte mso 9)|(IE)]></span><![endif]--></a></td>
+                                                  </tr>
+                                              </table>
+                                              
+                                          </td>
+                                      </tr>
+                                  </table>
+                              </td>
+                            </tr>
+                            
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ctapad" align="center" style="padding: 0px 0px 40px 0px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                           <tr>
+                               <td class="button" align="center">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                     <tr>
+                                        <td align="center">
+                                            <div>
+                                             <!--[if mso]>
+                                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://burrow.com?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=hero-cta" style="height:65px;v-text-anchor:middle;width:300px;" arcsize="7%" stroke="f" fillcolor="#DFD3CB">
+                                             <w:anchorlock/>
+                                             <center>
+                                             <![endif]-->
+                                              <a class="button-text" href="https://burrow.com/?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=cta"
+                                              style="background-color: #727380; border-radius: 4px; color: white; display: inline-block; font-family: 'GT America Extended Medium Dropbox', Arial, 'sans-serif'; font-size: 17px; letter-spacing: 1.54px; line-height: 65px; text-align: center; text-decoration: none; width: 300px; -webkit-text-size-adjust: none; text-transform: uppercase;">Shop the sale</a>
+                                              <!--[if mso]>
+                                              </center>
+                                              </v:roundrect>
+                                              <![endif]-->
+                                            </div>
+                                        </td>
+                                     </tr>
+                                  </table>
+                               </td>
+                           </tr>
+                        </table>
+                    </td>
+                 </tr>
+                
+            </table>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #727380">
+                    <tr>
+                        <td align="center" style="padding-top: 10px">
+                            <a href="https://burrow.com/showrooms?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=burrow-house"><img alt="Burrow House" width="600" style="display: block; width: 100%; max-width: 100%; font-size: 14px; font-family: Arial, 'sans-serif'; color: #FFFFFF;" border="0" src="https://burrow-assets.s3.amazonaws.com/email.burrow/20201121+Black+Friday/21+Best+Sellers/BF-Footer-2x.png" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="width: 100%; padding: 0px 0px 10px 0px">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 82%">
+                                <tr>
+                                    <td class="hed3" align="center" style="text-align: center; font-family: 'GT America Extended Medium Dropbox', Arial, 'sans-serif'; font-size: 30px; line-height: 35px; letter-spacing: -0.3px"><a href="https://burrowhouseappointments.as.me/schedule.php" style="text-decoration: none; color: #F7EEE3">Let's talk it&nbsp;out</a><br>
+                                        <span style="color:white; font-style: Neuzeit S LT W01 Book;font-size: 18px;">Visit us at Burrow House in Manhattan, or talk with the team from anywhere. Schedule an appointment for either an in-person visit or a scheduled call to ask questions, get design advice, or place a custom order.
+
+                                            <br><br><a href='https://burrow.com?utm_source=burrow&utm_medium=email&utm_campaign=20201124-bf-02-AL&utm_content=cta' style="border-bottom: 1px solid #F7EEE3; text-decoration: none; color: #white;">Schedule an appointment</a></span>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td bgcolor="#484543" align="center" style="width: 100%">
+                            <table bgcolor="#484543" border="0" cellpadding="0" cellspacing="0" style="max-width: 300px; background-color: #484543;" align="center">
+                                <tr>
+                                    <td align="center" style="vertical-align:middle; padding: 20px 50px 20px 0px">
+                                        <a href="https://www.facebook.com/burrow"><img class="icon" src="https://burrow-assets.s3.amazonaws.com/email.burrow/Templates/Footer+Icons/facebook.png" alt="Facebook" style="font-size: 8px; color: #FCF8F4"></a>
+                                    </td>
+                                    <td align="center" style="vertical-align:middle; padding: 20px 50px 20px 0px">
+                                        <a href="https://twitter.com/hiburrow"><img class="icon" src="https://burrow-assets.s3.amazonaws.com/email.burrow/Templates/Footer+Icons/twitter.png" alt="Twitter" style="font-size: 8px; color: #FCF8F4"></a>
+                                    </td>
+                                    <td align="center" style="vertical-align:middle; padding: 20px 50px 20px 0px">
+                                        <a href="https://www.pinterest.com/hiburrow/"><img class="icon" src="https://burrow-assets.s3.amazonaws.com/email.burrow/Templates/Footer+Icons/pinterest.png" alt="Pinterest" style="font-size: 8px; color: #FCF8F4"></a>
+                                    </td>
+                                    <td align="center" style="vertical-align:middle; padding: 20px 0px 20px 0px">
+                                        <a href="https://www.instagram.com/burrow/"><img class="icon" src="https://burrow-assets.s3.amazonaws.com/email.burrow/Templates/Footer+Icons/instagram.png" alt="Instagram" style="font-size: 8px; color: #FCF8F4"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table align="center" border="0" cellspacing="0" cellpadding="0" width="400" style="background-color: #484543; width: 400px">
+                            <tr>
+                            <td bgcolor="#484543" align="center" valign="top" width="400" style="background-color: #484543; width: 400px">
+                            <![endif]-->
+                            <table class="divider" align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width: 400px; border-top: 1px solid #706D6B; border-bottom: 1px solid #706D6B;">
+                                <tr>
+                                    <td class="footwrap" align="center" style="padding: 7px 0px 7px 0px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 400px; text-align: center" align="center">
+                                            <tr>
+                                                <td align="center" style="padding: 15px 0 0 0; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif';font-size:16px;-webkit-text-size-adjust:none; line-height: 16px;" class="footerlinks"><a style="text-decoration: none; color: #FCF8F4;" href="https://burrow.com/terms">Terms</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 20px 0 0 0; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif';font-size:16px;-webkit-text-size-adjust:none; line-height: 16px;" class="footerlinks"><a style="text-decoration: none; color: #FCF8F4;" href="https://burrow.com/privacy">Privacy</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 20px 0 0 0; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif';font-size:16px;-webkit-text-size-adjust:none; line-height: 16px;" class="footerlinks"><a style="text-decoration: none; color: #FCF8F4;" href="{{unsubscribeUrl}}">Unsubscribe</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="padding: 20px 0 15px 0; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif';font-size:16px;-webkit-text-size-adjust:none; line-height: 16px;" class="footerlinks"><a style="text-decoration: none; color: #FCF8F4;" href="{{viewInBrowserUrl}}">View&nbsp;In&nbsp;Browser</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 400px;">
+                                <tr>
+                                    <td align="center" style="padding: 5px 30px 20px 30px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" align="center">
+                                            <tr>
+                                                <td class="foot2" align="center" style="vertical-align: top; width: 100%; color: #FCF8F4; text-align: center; font-family: 'Neuzeit S LT W01 Book', Arial, 'sans-serif'; font-size: 12px; line-height: 17px; padding-top: 10px">15 W 27th Street, New York, NY
+                                                    <br /> © 2020 Burrow
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                        </td>
+                    </tr>
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
